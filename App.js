@@ -1,6 +1,9 @@
 import { Camera, CameraType } from 'expo-camera';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Button, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+
+
 
 export default function App() {
   const [type, setType] = useState(CameraType.back);
